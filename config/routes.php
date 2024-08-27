@@ -1,11 +1,11 @@
 <?php
 
-use App\Controllers\HomeControllers;
+use App\Controllers\HomeController;
 use App\Controllers\MovieController;
-use App\Router\Route;
+use App\Kernel\Router\Route;
 
 return [
-    Route::get('/', [HomeControllers::class, 'index']),
-    Route::get('/home', [HomeControllers::class, 'index']),
+    Route::get('/', [HomeController::class, 'index']),
+    Route::get('/home', [HomeController::class, 'index']),
     Route::get('/movies', [MovieController::class, 'index']),
 ];
