@@ -8,4 +8,6 @@ return [
     Route::get('/', [HomeController::class, 'index']),
     Route::get('/home', [HomeController::class, 'index']),
     Route::get('/movies', [MovieController::class, 'index']),
+    Route::get('/admin/movies/add', [MovieController::class, 'add']),
+    Route::post('/admin/movies/add', [MovieController::class, 'store']),
 ];
